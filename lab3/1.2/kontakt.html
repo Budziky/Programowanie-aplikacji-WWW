@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label, input, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input, textarea {
+            padding: 8px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+		.menu {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .menu a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        h1, h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+		<div class="menu">
+            <a href="home.html">Home</a>
+            <a href="azja.html">Mosty w Azji</a>
+            <a href="amerykapolnocna.html">Mosty w Ameryce Północnej</a>
+            <a href="europa.html">Mosty w Europie</a>
+			<a href="galeria.html">Galeria zdjęć</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+        <h1>Formularz kontaktowy</h1>
+        <form action="mailto:twojemail@example.com" method="post" enctype="text/plain">
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <input type="submit" value="Wyślij">
+        </form>
+    </div>
+</body>
+</html>
